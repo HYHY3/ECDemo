@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertComponent } from './product-alert/product-alert.component';
 import { ProductDetalComponent } from './product-detal/product-detal.component';
+import { CartService } from './cart.service';
 
 @NgModule({
   imports: [
