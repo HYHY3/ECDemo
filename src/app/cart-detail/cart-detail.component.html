@@ -1,0 +1,26 @@
+<h3>Cart Details</h3>
+
+<p>
+    <a [routerLink]="['/shipping']">
+       Shipping Price Information
+    </a>
+</p>
+
+<div class="cart-item" *ngFor="let productInfo of allItemsInCart">
+    <span>{{ productInfo.name }}</span>
+    <span>{{ productInfo.price | currency }}</span>
+</div>
+
+<div>
+    <label>Name</label>
+    <input placeholder="Input Your Name">
+    <label>Address</label>
+    <input placeholder="Input Your Address">
+</div>
+
+
+<div>
+    <button type="button" (click)="onPurchase()">
+        Purchase
+    </button>
+</div>
